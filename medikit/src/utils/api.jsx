@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/auth';  // Update with your backend URL
+const API_URL = 'https://medikit.onrender.com/api/auth';  // Update with your backend URL
 
 // Create an Axios instance for handling requests
 const api = axios.create({
@@ -75,7 +75,7 @@ const fetchMedications = async () => {
       return [];  // Return an empty array if there's no token
     }
 
-    const response = await axios.get('http://localhost:5000/api/medications', {
+    const response = await axios.get('https://medikit.onrender.com/api/medications', {
       headers: {
         'Authorization': `Bearer ${token}`,
       },
@@ -94,7 +94,7 @@ const fetchMedications = async () => {
 
 export const saveAcknowledgment = async (acknowledgmentData) => {
   try {
-    const response = await axios.post('http://localhost:5000/api', acknowledgmentData);
+    const response = await axios.post('https://medikit.onrender.com/api', acknowledgmentData);
     return response;
   } catch (error) {
     console.error('Error in API request:', error);
@@ -106,7 +106,7 @@ export const saveAcknowledgment = async (acknowledgmentData) => {
 export const fetchMedicationById = async (id) => {
   try {
     const token = localStorage.getItem('authToken');
-    const response = await axios.get('http://localhost:5000/api/medications', {
+    const response = await axios.get('https://medikit.onrender.com/api/medications', {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -122,7 +122,7 @@ export const fetchMedicationById = async (id) => {
 export const updateMedication = async (id, medicationData) => {
   try {
     const token = localStorage.getItem('authToken');
-    const response = await axios.put(`http://localhost:5000/api/medications/${id}`, medicationData, {
+    const response = await axios.put(`https://medikit.onrender.com/api/medications/${id}`, medicationData, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -139,7 +139,7 @@ export const updateMedication = async (id, medicationData) => {
 export const deleteMedication = async (id) => {
   try {
     const token = localStorage.getItem('authToken');
-    const response = await axios.delete(`http://localhost:5000/api/medications/${id}`, {
+    const response = await axios.delete(`https://medikit.onrender.com/api/medications/${id}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -153,7 +153,7 @@ export const deleteMedication = async (id) => {
 export const acknowledgeMedication = async (id) => {
   const token = localStorage.getItem('authToken');  // Get auth token from localStorage
 
-  const response = await fetch(  `http://localhost:5000/api/medications/${id}/acknowledge`, {
+  const response = await fetch(  `https://medikit.onrender.com/api/medications/${id}/acknowledge`, {
     method: 'PATCH',
     headers: {
       'Content-Type': 'application/json',
@@ -172,7 +172,7 @@ export const acknowledgeMedication = async (id) => {
 // Fetch acknowledgment logs
 export const fetchAcknowledgmentLogs = async () => {
   const token = localStorage.getItem('authToken');
-  const response = await axios.get(`http://localhost:5000/api/logs`, {
+  const response = await axios.get(`https://medikit.onrender.com/api/logs`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
