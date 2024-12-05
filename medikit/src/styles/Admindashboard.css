@@ -1,0 +1,87 @@
+/* Admin Dashboard Styles */
+.admin-dashboard {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .admin-dashboard h2 {
+    text-align: center;
+    color: #333;
+    background-color: #4CAF50;  /* Background color for the title */
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  /* Logout Button */
+  .logout-btn {
+    background-color: #ff5722;  /* Vibrant color for logout button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px 0;
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+  }
+  
+  .logout-btn:hover {
+    background-color: #e64a19;
+  }
+  
+  .logout-btn:active {
+    background-color: #d32f2f;
+  }
+  
+  /* Users table styles */
+  .users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Table headers background */
+  .users-table th {
+    background-color: #4CAF50;  /* Green background color for table headers */
+    color: white;
+    padding: 12px 20px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .users-table th:hover {
+    background-color: #45a049;  /* Slightly darker green on hover */
+  }
+  
+  /* Table rows */
+  .users-table td {
+    padding: 12px 20px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .users-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .users-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Empty medication row */
+  .users-table td[colspan="3"] {
+    text-align: center;
+    color: #888;
+  }
+  
+  /* Error message */
+  .error {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+  }
+  

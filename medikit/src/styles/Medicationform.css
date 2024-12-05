@@ -1,0 +1,52 @@
+/* src/styles/MedicationForm.css */
+
+.medication-form {
+    width: 200px;
+    margin: 0 auto;
+  }
+  
+  .medication-form h2 {
+    text-align: center;
+  }
+  
+  .medication-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+  }
+  /* Hide spinner for number inputs */
+.react-time-picker input::-webkit-outer-spin-button,
+.react-time-picker input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.react-time-picker input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+  
+  .schedule-time-container {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

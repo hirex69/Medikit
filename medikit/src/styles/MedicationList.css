@@ -1,0 +1,127 @@
+/* Add some global padding for the page */
+body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container for the Medication List and User Info */
+  .medication-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* User info section */
+  .user-info {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-info span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+  
+  .logout-button {
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .logout-button:active {
+    background-color: #c62828;
+  }
+  
+  /* General table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  /* Table header styling */
+  th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Table row hover effect */
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* General button styling */
+  button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  /* Delete button styling */
+  button.delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+  }
+  
+  button.delete:hover {
+    background-color: #d32f2f;
+  }
+  
+  button.delete:active {
+    background-color: #c62828;
+  }
+  
+  /* Edit button styling */
+  button.edit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+  
+  button.edit:hover {
+    background-color: #388E3C;
+  }
+  
+  button.edit:active {
+    background-color: #2C6B2F;
+  }
+  
+  /* Loading state styling */
+  p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4CAF50;
+    text-align: center;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
